@@ -13,18 +13,18 @@ This directory contains the report of the *Pulseq Rocks* team for the 2023-24 IS
 * Vendor-based and Pulseq-based 3D MPRAGE sequences with GRAPPA acceleration and noise scan
 * Vendor-based and Pulseq-based 2D multi-slice EPI sequences with ramp sampling and a three-echo navigator
 
-**Note**: please visit the "data_acquisition_tutorial" directory in this repository for more information.        
+**Note**: please visit [data_acquisition_tutorial](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/tree/main/data_acquisition_tutorial) in this repository for more information.        
 ### 1.4 Image reconstruction
 * Offline Gadgetron reconstruction for GE Pulseq-based data and Siemens vendor-based and Pulseq-based data
 * Online “Image Calculation Environment” (ICE) reconstruction on Siemens scanners for Siemens-based and Pulseq-based sequences
 * Online reconstruction on the GE scanner at the University of Michigan for GE-based product sequences
 
-**Note**: please visit the "image_reconstruction_tutorial" directory in this repository for more information.    
+**Note**: please visit [image_reconstruction_tutorial](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/tree/main/image_reconstruction_tutorial) in this repository for more information.    
 ## 2. Results and Discussions
-Please read the `Pulseq_Rocks_2023_24_ISMRM_reproducibility_challenge_report.pdf` document for more information.
+Please read [Pulseq_Rocks_2023_24_ISMRM_reproducibility_challenge_report.pdf](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/blob/main/reproducibility_team_challenge_report/Pulseq_Rocks_2023_24_ISMRM_reproducibility_challenge_report.pdf) for more information.
 ## 3. Conclusion
 * We successfully establish an efficient, open-source, easy-to-learn MRI data acquisition and image reconstruction workflow based on Pulseq and Gadgetron and validate it for MPRAGE and EPI protocols.
 * The reproducibility challenge study demonstrates that it is feasible to use this workflow to harmonize data acquisition and image reconstruction across scanner system versions, centers, and vendors.
 * The preliminary results indicate that this workflow has excellent potential to enhance efficiency, transparency, and reproducibility for data acquisition and reconstruction in large-scale MRI studies.
 
-**Note**: This work is not published yet. We plan to publish it as soon as possible.
+**Note**: This work has not been published yet. We plan to publish it as soon as possible.
