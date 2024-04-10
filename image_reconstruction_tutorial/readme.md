@@ -2,15 +2,15 @@
 This directory contains materials and tutorials for image reconstruction using vendor-provided online reconstruction and Gadgetron software on Siemens and GE scanners.
 ## 1. Prerequisites
 ### 1.1 Gadgetron Docker image
-Download a Gadgetron Docker image (Figure 1) and map a folder in your computer to the Gadgetron Docker image (https://gadgetron.github.io/tutorial/).
+Download a Gadgetron Docker image (Figure 1) and map a folder in your computer to the [Gadgetron Docker image](https://gadgetron.github.io/tutorial/).
 ![dockerimage](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/5a80d91d-fec7-4bf7-8dd9-583645902fd7)
 **Figure 1** gt1 is the Gadgetron docker image.
 ### 1.2 ISMRMRD software
-Please install the ISMRMRD software (https://github.com/ismrmrd/ismrmrd) in your Matlab/Python software for converting Pulseq raw data to ISMRMRD data.
+Please install the [ISMRMRD software](https://github.com/ismrmrd/ismrmrd) in your Matlab/Python software for converting Pulseq raw data to ISMRMRD data.
 ### 1.3 mapVBVD software
 The mapVBVD software is required to read raw data in Siemens TWIX format. Please download the software from https://github.com/pehses/mapVBVD install it to your Matlab/Python software.
 ### 1.4 DICOM converter
-Please download the dicm2nii converter (https://github.com/xiangruili/dicm2nii) to convert the DICOM images to .nii images.
+Please download the [dicm2nii converter](https://github.com/xiangruili/dicm2nii) to convert the DICOM images to .nii images.
 ## 2. MPRAGE Image Reconstruction
 ### 2.1 ICE online reconstruction
 Pulseq enables ICE online reconstruction for MPRAGE with GRAPPA acceleration on Siemens scanners. To turn on ICE online recon, please turn on the iPAT card and select `Data handling` in the `Special Card` to be `ICE STD` for Numaris/X scanners (`ICE 3D` for Numaris/4 scanners), as below.
