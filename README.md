@@ -1,6 +1,6 @@
 # Introduction
 This repository contains data, tutorials, and reports of the *Pulseq Rocks* team for the 2023-24 ISMRM Reproducibility Challenge event.
-## Reproducibility team
+## Reproducibility Team
 ### Team name
 * *Pulseq Rocks*
 ### Original author sub-team members
@@ -8,7 +8,7 @@ This repository contains data, tutorials, and reports of the *Pulseq Rocks* team
 ### Replicator sub-team members
 * Amaya Murguia, Andrea Jacobson, David Frey, Scott Peltier, and Jon-Fredrik Nielsen, from the University of Michigan (UoM), USA
 * Pengcheng Xu and Berkin Bilgic, from Massachusetts General Hospital (MGH), USA
-## Reproducibility tasks
+## Reproducibility Tasks
 Our task is to replicate the abstract titled *"Open-Source, Cross-Platform Workflow for MRI Data Acquisition and Image Reconstruction Based on the Pulseq Framework"* (program number: 6708, ISMRM 2024) on Siemens and General Electric (GE) magnetic resonance scanners in different research centers.   
 In the abstract, we develop an open-source, cross-platform, easy-to-learn workflow based on the Pulseq framework to enable efficient, transparent, reproducible data acquisition (Figure 1). We extend Pulseq to integrate with Siemens’ “Image Calculation Environment” (ICE) platform and Gadgetron to establish a complete data acquisition and reconstruction workflow. ICE is integrated into the Siemens magnetic resonance system, while Gadgetron can be used to reconstruct data from various vendors by employing vendor-independent ISMRMRD data format. Two example sequences, Magnetization Prepared RApid Gradient Echo (MPRAGE) and Echo-Planar Imaging (EPI), were developed based on the extended Pulseq and executed on three Siemens scanners to validate the workflow.
 ![workflow](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/71345df4-6293-4298-8950-404a543cc111)
