@@ -25,7 +25,7 @@ Pulseq enables ICE online reconstruction for MPRAGE with GRAPPA acceleration on 
 * Go to the mapped folder: `cd /opt/data`
 * Reconstruct MPRAGE raw data: `gadgetron_ismrmrd_client -f mprage_data.h5 -c Generic_Cartesian_Grappa.xml -o mprage_out.h5`, as below:
 ![gadgetron_recon](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/c59577a2-c032-45b7-95a2-a90a979b5dfc)
-mprage_out.h5 is the reconstructed *.h5* MPRAGE images.
+mprage_out.h5 is the Gadgetron-reconstructed *.h5* MPRAGE images.
 ### 2.4 Read Gadgetron-based .h5 recon images
 In Matlab, run the following lines to load the reconstructed mprage_out.h5 MPRAGE images.     
 `filename = 'mprage_out.h5' ;`        
