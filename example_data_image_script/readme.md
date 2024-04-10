@@ -10,7 +10,7 @@ The package has the following data, images, and scripts.
 * `pulseq2mrd_epi.m`: the script to convert the `.dat` EPI raw data to ISMRMRD data.
 * `readdata.m`: the script to load the `epi_out.h5` file.
 * `writeEpiRS_label.m`: the script to generate the `epi_rs.seq` file.
-* ## `mprage` Sub-Folder
+## `mprage` Sub-Folder
 * `mprage_out.h5`: the Gadgetron-reconstructed MPRAGE images.
 * `mprage.seq`: the `.seq` file for the Pulseq-based MPRAGE sequences.
 * `meas_MID00077_FID10622_pulseq_t1_mprage_sag_p2.dat`: the Siemens `.dat` MPRAGE raw data.
