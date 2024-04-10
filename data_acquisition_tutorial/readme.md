@@ -13,9 +13,20 @@ The Pulseq interpreter can be used to execute the Pulseq sequence file (.seq fil
 * The interpreter for GE scanners can be obtained upon request (for more information, please send an inquiry to jfnielse-at-umich.edu).
 ### 1.4 Text Compare Tool
 We recommend using a text comparison tool to compare the sequences within the subsequent steps to visualize the changes that occur at each
-step. *Meld* software can be used for text comparison and can be downloaded from <https://meldmerge.org/>. By using Meld or other comparable software packages, it is possible to very quickly make the relevant changes easily visible, as in the example below.
+programming step. *Meld* software can be used for text comparison and can be downloaded from <https://meldmerge.org/>. By using Meld or other comparable software packages, it is possible to very quickly make the relevant changes easily visible, as in the example below.
 ![meld](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/e11c480d-1f8c-4e84-b3dc-8652f0241c98)
 
 ## 2. MPRAGE Data Acquisition
-### Pulseq-based MPRAGE
-We develop a 3D MPRAGE sequence with GRAPPA acceleration and noise scan using 
+### Pulseq-based MPRAGE sequence
+We develop a 3D MPRAGE sequence with a GRAPPA acceleration factor of two and a noise scan using Pulseq. The MPRAGE sequence diagram is shown below.
+![mprage_seq_diagram](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/a1a62b03-f031-4c70-b493-044152894b95)
+* For Siemens users, please install the most updated Siemens Pulseq interpreter on your Siemens scanner. Please run the `writeMPRAGE_grappa_4siemens.m` script to generate the `mprage.seq` Pulseq file. Please place the `mprage.seq` to subfolder `%CustomerSeq%\pulseq` on your scanner. For more information about sequence installation and execution, please refer to the Pulseq C2P manual.
+* For GE users, Due to hardware limitations, the noise scan of the MPRAGE sequence must be moved from the beginning to the end of the data acquisition (`writeMPRAGE_grappa_4ge.m`). Please install the TOPPE GE Pulseq interpreter on your GE scanner. Please run the `writeMPRAGE_grappa_4ge.m` script to generate the `mprage_noiseScan.seq` Pulseq file. Please convert the `mprage_noiseScan.seq` file to `mprage_noiseScan.tar` file using TOPPE software and place the `mprage_noiseScan.tar` in the proper directory in your GE scanner. For more information about Pulseq on GE, please refer to https://drive.google.com/file/d/1ejtXJfAWdNzXjMlz4Jo3KjVQU6BwGd5g/view.
+* We also run product MPRAGE protocols for comparison. For Siemens users, please refer to `siemens_product_mprage_protocol.pdf`. For GE users, please refer to `key_sequence_parameters_GE_productProtocol.pdf` for information about the key sequence parameters.
+### Pulseq-based EPI sequence
+We develop a 2D multi-slice EPI sequence with fat saturation, ramp sampling, and a three-echo navigator using Pulseq. The EPI sequence diagram is shown below.
+![Fig2_epirs_seq_diag](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/05c74247-4186-44a4-bcd1-c2008d44c791)
+* For both Siemens and GE users, please run the `writeEpiRS_label.m` script to generate the `epr_rs.seq` Pulseq file for sequence execution.
+* We also run product EPI protocols for comparing the performance between the vendor-based and Pulseq-based EPI sequences. For Siemens users, please refer to `siemens_product_epi_protocol.pdf`. For GE users, please refer to `key_sequence_parameters_GE_productProtocol.pdf` for information about the key sequence parameters.
+
+Notes: Please try to keep and FOV position and the adjustment shim volume the same for both product and Pulseq scans. Please select the `Coil Combination` parameter to be `Sum of Squares`.
