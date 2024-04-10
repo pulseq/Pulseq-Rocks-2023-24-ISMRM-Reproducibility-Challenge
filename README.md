@@ -1,5 +1,5 @@
 # Introduction
-This repository contains data, tutorials, and reports of the *Pulseq Rocks* team for the 2023-24 ISMRM Reproducibility Challenge event.
+This repository contains materials, tutorials, and reports of the *Pulseq Rocks* team for the 2023-24 ISMRM Reproducibility Challenge event.
 ## Reproducibility Team
 ### Team name
 * *Pulseq Rocks*
