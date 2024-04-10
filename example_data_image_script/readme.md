@@ -2,7 +2,7 @@
 The example data, images, and scripts for the [data acquisition](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/tree/main/data_acquisition_tutorial) and [image reconstruction](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/tree/main/image_reconstruction_tutorial) tutorials can be downloaded via this link: 
 https://www.dropbox.com/scl/fi/o39yenr3dz5hf8csjs32m/example_rawdata_reconImage_script.zip?rlkey=rprm958feu2y1r870ci0928oe&dl=0.
 The example data were obtained from a liquid-filled phantom on a Siemens Prisma 3T scanner (Version: XA60A).
-The package has the following data, images, and scripts.
+The package contains the following data, images, and scripts.
 ## `epi` Sub-Folder
 * `epi_out.h5`: the Gadgetron-reconstructed EPI images.
 * `epi_rs.seq`: the `.seq` file for the Pulseq-based EPI sequences.
