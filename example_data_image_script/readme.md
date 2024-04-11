@@ -5,14 +5,14 @@ The example data were obtained from a liquid-filled phantom on a Siemens Prisma 
 The package contains the following data, images, and scripts.
 ## `epi` Sub-Folder
 * `epi_out.h5`: the Gadgetron-reconstructed EPI images.
-* `epi_rs.seq`: the `.seq` file for the Pulseq-based EPI sequences.
+* `epi_rs.seq`: the `.seq` file for the Pulseq-based EPI sequence.
 * `meas_MID00090_FID10635_pulseq_epirs_tran_slc48_iso_2_8mm.dat`: the Siemens `.dat` EPI raw data.
 * `pulseq2mrd_epi.m`: the script to convert the `.dat` EPI raw data to ISMRMRD data.
 * `readdata.m`: the script to load the `epi_out.h5` file.
 * `writeEpiRS_label.m`: the script to generate the `epi_rs.seq` file.
 ## `mprage` Sub-Folder
 * `mprage_out.h5`: the Gadgetron-reconstructed MPRAGE images.
-* `mprage.seq`: the `.seq` file for the Pulseq-based MPRAGE sequences.
+* `mprage.seq`: the `.seq` file for the Pulseq-based MPRAGE sequence on Siemens scanners.
 * `meas_MID00077_FID10622_pulseq_t1_mprage_sag_p2.dat`: the Siemens `.dat` MPRAGE raw data.
 * `pulseq2mrd_mprage.m`: the script to convert the `.dat` MPRAGE raw data to ISMRMRD data.
 * `readdata.m`: the script to load the `mprage_out.h5` file.
