@@ -2,7 +2,7 @@
 This repository contains materials, tutorials, and reports of the *Pulseq Rocks* team for the [2023-24 ISMRM Reproducibility Challenge](https://challenge.ismrm.org/2023-24-reproducibility-challenge/) event.
 ![reproducibility_qr_graphic_sticker](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/adef1b4e-0391-4506-ab49-15db699dae20)
 # Good News
-### **Our *Pulseq Rocks* team won first place in this highly competitive Challenge!!!**
+### Our *Pulseq Rocks* team won first place in this highly competitive Challenge!!!
 ## Reproducibility Challenge Team
 ### Team name
 * *Pulseq Rocks*
