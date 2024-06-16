@@ -12,9 +12,7 @@ This repository contains materials, tutorials, and reports of the *Pulseq Rocks*
 * Amaya Murguia, Andrea Jacobson, David Frey, Scott Peltier, and Jon-Fredrik Nielsen, from the University of Michigan (UoM), USA
 * Pengcheng Xu and Berkin Bilgic, from Massachusetts General Hospital (MGH), USA
 ## Reproducibility Tasks
-Our task is to replicate the abstract titled *"Open-Source, Cross-Platform Workflow for MRI Data Acquisition and Image Reconstruction Based on the Pulseq Framework"* (program number: 0948, ISMRM 2024) on Siemens and General Electric (GE) magnetic resonance scanners in different research centers.   
-This abstract was awarded the ISMRM Magna cum Laude Merit Award:
-<img width="986" alt="award" src="https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/f406250a-d2f1-41a5-bcbe-2ee2371ae6a3">
+Our task is to replicate the abstract titled *"Open-Source, Cross-Platform Workflow for MRI Data Acquisition and Image Reconstruction Based on the Pulseq Framework"* (program number: 0948, ISMRM 2024) on Siemens and General Electric (GE) magnetic resonance scanners in different research centers. This abstract was awarded the ISMRM Magna cum Laude Merit Award.
 
 ### Motivation
 There is currently a worldwide effort to discover potential research and promote clinical use of magnetic resonance imaging (MRI). However, a significant practical barrier is the effort required to harmonize sequences and reconstruction algorithms on vendor-specific development platforms to ensure that data are acquired and reconstructed in a consistent and reproducible manner across different platforms. In order to directly compare results between platforms or to pool data from multiple platforms for increasing statistical power, open-source science and software tools are desirable for efficiently harmonizing data acquisition and image reconstruction in multi-site MRI studies.
