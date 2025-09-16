@@ -1,0 +1,11 @@
+filename = 'pulseq_mprage_out.h5' ;
+info = hdf5info(filename) ;
+address_data_1 = info.GroupHierarchy.Groups(1).Groups.Datasets(2).Name ;
+im = squeeze(double( hdf5read(filename, address_data_1) ) ) ;
+im = permute(im, [3, 2, 1]) ;
+im = flip(im, 3) ;
+im = flip(im, 1) ;
+figure ;
+montage(squeeze(mat2gray(im(:,:,150:160)))) ;
+colormap default ;
+niftiwrite(im, 'pulseq_mprage_gt.nii') ;
