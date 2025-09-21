@@ -1,4 +1,4 @@
-# Tutorials for Harmonized Data Acquisition Using Pulseq
+# Tutorials for conversion of Pulseq-generated data into ISMRMRD data format
 This directory contains materials and tutorials for harmonized data acquisition with Pulseq-based MPRAGE and EPI sequences on Siemens, Generic Electric (GE), Philips, and United Imaging (UIH) platforms.
 ## 1. Prerequisites
 ### 1.1 Programming tools
