@@ -41,18 +41,19 @@ Before executing the Pulseq-based sequences on a Siemens platform, you can enabl
 * Download the Open Recon SDK from [this link](https://www.magnetom.net/t/open-recon-sdk-downloads/7223), and follow the instructions to install Open Recon on your scanner. Note that currently, Open Recon is only available on XA50 or higher versions. For more information, please visit the [Open Recon online forum](https://www.magnetom.net/c/openrecon/35).
 * You can also refer to our ISMRM abstract: *Chen et al., Open-source, Flexible, and Reproducible Workflow for Data Acquisition, Reconstruction, and Post-processing Based on Pulseq and Open Recon, ISMRM, Hawaii, 2025* for more information for the integration of Pulseq with Open Recon.
 
-## 3. Reconstructed images
-* The MPRAGE images reconstructed using Gadgetron, ICE, and Open Recon are shown below:
+## 3. Example reconstructed images
+* The MPRAGE images from Siemens Cima.X 3T:
 
 <img width="677" height="254" alt="mprage" src="https://github.com/user-attachments/assets/36839e0a-6109-4535-9805-3a40e1046df0" />
 
-* The EPI images reconstructed using Gadgetron, ICE, and Open Recon are shown below:
+* The EPI images from Siemens Cima.X 3T:
 
 <img width="666" height="202" alt="epi" src="https://github.com/user-attachments/assets/9e1cdfda-f27a-44f0-817b-24ec08f405e2" />
 
 
 
  
+
 
 
 
