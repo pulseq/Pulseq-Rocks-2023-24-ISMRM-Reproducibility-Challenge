@@ -1,5 +1,5 @@
 # Tutorials for Harmonized Data Acquisition Using Pulseq
-This directory contains materials and tutorials for harmonized data acquisition with Pulseq-based MPRAGE and EPI sequences on Siemens, Generic Electric (GE), Philips, and United Imaging (UIH) platforms.
+This directory contains materials and tutorials for harmonized data acquisition with Pulseq-based MPRAGE and EPI sequences on Siemens, General Electric (GE), Philips, and United Imaging (UIH) platforms.
 ## 1. Prerequisites
 ### 1.1 Programming tools
 In this project, the Pulseq-based sequences are designed using the [*Pulseq MATLAB open-source toolbox*](https://github.com/pulseq/pulseq). Therefore, you need to install the MATLAB software on your computer and be familiar with basic MATLAB programming. Alternatively, you can program your Pulseq-based sequences using the [*PyPulseq Python open-source toolbox*](https://github.com/imr-framework/pypulseq) with the Python software installed on your computer. It is also possible to program sequences using Pulseq on Google CoLab without installing programming tools on your computer (see more examples from the [*MR Physics with Pulseq 2024 DACH-ISMRM course*](https://github.com/pulseq/MR-Physics-with-Pulseq)).   
@@ -24,5 +24,6 @@ We developed a 2D multi-slice EPI sequence with fat saturation, ramp sampling, a
 <img width="1909" height="791" alt="epi_diagram" src="https://github.com/user-attachments/assets/3227e030-35c6-4d55-8706-a30d76c0eab1" />
 * Please run the `writeEpiRS_label.m` script with the correct vendor option (e.g., `vendor = 'siemens';`) to generate the `epi_challenge.seq` Pulseq file for sequence execution. For data acquisition on Siemens platforms, please refer to the instruction `data_acquisition_reconstruction_instruction_siemens.pdf`. For data acquisition on non-Siemens platforms, please refer to the instruction `data_acquisition_instruction_GE_Philips_UIH.pdf`.
 * We also run product EPI protocols for comparing the performance between the vendor-based and Pulseq-based EPI sequences. For product sequence configuration on Siemens, please refer to the document `siemens_protocol.pdf`. For product sequence configuration on other vendors, please refer to `data_acquisition_instruction_GE_Philips_UIH.pdf` for the information on the key sequence parameters.
+
 
 
