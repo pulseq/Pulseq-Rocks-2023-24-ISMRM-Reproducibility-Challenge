@@ -22,8 +22,9 @@ We developed a 3D MPRAGE sequence using Pulseq in Matlab. The MPRAGE sequence di
 ## 3. EPI
 We developed a 2D multi-slice EPI sequence with fat saturation, ramp sampling, and a three-echo navigator using Pulseq. The EPI sequence diagram is shown below.
 <img width="1909" height="791" alt="epi_diagram" src="https://github.com/user-attachments/assets/3227e030-35c6-4d55-8706-a30d76c0eab1" />
-* Please run the `writeEpiRS_label.m` script with the correct vendor option (e.g., `vendor = 'siemens';`) to generate the `epi_challenge.seq` Pulseq file for sequence execution. For data acquisition on Siemens platforms, please refer to the instruction `data_acquisition_reconstruction_instruction_siemens.pdf`. For data acquisition on non-Siemens platforms, please refer to the instruction `data_acquisition_instruction_GE_Philips_UIH.pdf`.
+* Please run the `writeEpiRS_label.m` script with the correct vendor option (e.g., `vendor = 'siemens' ;`) to generate the `epi_challenge.seq` Pulseq file for sequence execution. For data acquisition on Siemens platforms, please refer to the instruction `data_acquisition_reconstruction_instruction_siemens.pdf`. For data acquisition on non-Siemens platforms, please refer to the instruction `data_acquisition_instruction_GE_Philips_UIH.pdf`.
 * We also run product EPI protocols for comparing the performance between the vendor-based and Pulseq-based EPI sequences. For product sequence configuration on Siemens, please refer to the document `siemens_protocol.pdf`. For product sequence configuration on other vendors, please refer to `data_acquisition_instruction_GE_Philips_UIH.pdf` for the information on the key sequence parameters.
+
 
 
 
