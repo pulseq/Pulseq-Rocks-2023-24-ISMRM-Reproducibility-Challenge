@@ -24,8 +24,6 @@ This directory contains materials and tutorials for
 * For EPI reconstruction, run `gadgetron_ismrmrd_client -f pulseq_epi_data.h5 -c epi.xml -o pulseq_epi_out.h5` in the PowerShell to generate the Gadgetron-reconstructed EPI image: `pulseq_epi_out.h5`. `pulseq_epi_data.h5` is the Pulseq-generated EPI ISMRMRD data.     
 <img width="1333" height="276" alt="image" src="https://github.com/user-attachments/assets/b6286d76-a03f-47b8-ad45-a40706fca4dc" />
 
-
-
 ### 1.4 Load Gadgetron-reconstructed images
 * Run `load_Gadgetron_recon_mprage.m` script to load Gadgetron-reconstructed MPRAGE images (`pulseq_mprage_out.h5`) and save as nifti images (`pulseq_mprage_gt.nii`). One MPRAGE image is shown below:
 
@@ -36,8 +34,20 @@ This directory contains materials and tutorials for
 
 <img width="1046" height="1045" alt="epi" src="https://github.com/user-attachments/assets/d2d97464-0964-4cbb-8b79-c0cc6eb146c4" />
 
+## 2. Instructions for ICE online reconstruction on Siemens
+Before executing the Pulseq-based sequences on a Siemens platform, you can enable ICE online Reconstruction following the instructions below:
+* Navigate to the Special Card, set Data handling to ICE STD for NUMARIS/X (e.g. XA60A and XA61A), and ICE 3D/2D for MPRAGE/EPI for NUMARIS/4 (e.g. VB, VD, and VE), as below:
+
+<img width="945" height="407" alt="image" src="https://github.com/user-attachments/assets/a6b0a2b8-63e7-480c-acdc-3b63c5972799" />
+
+* Select `Sum-of-Square` for coil combination.
+* Be sure that the maximal pixel intensity does not violate the intensity threshold of **4096**.
+
+
+
 
  
+
 
 
 
