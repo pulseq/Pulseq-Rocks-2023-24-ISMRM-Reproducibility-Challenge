@@ -34,7 +34,8 @@ This directory contains materials and tutorials for
 
 <img width="1046" height="1045" alt="epi" src="https://github.com/user-attachments/assets/d2d97464-0964-4cbb-8b79-c0cc6eb146c4" />
 
-## 2. Instructions for ICE online reconstruction on Siemens
+## 2. Instructions for vendor-based online reconstruction on Siemens
+### 2.1 ICE reconstruction
 Before executing the Pulseq-based sequences on a Siemens platform, you can enable ICE online Reconstruction following the instructions below:
 * Navigate to the Special Card, set Data handling to ICE STD for NUMARIS/X (e.g. XA60A and XA61A), and ICE 3D/2D for MPRAGE/EPI for NUMARIS/4 (e.g. VB, VD, and VE), as below:
 
@@ -42,11 +43,14 @@ Before executing the Pulseq-based sequences on a Siemens platform, you can enabl
 
 * Select `Sum-of-Square` for coil combination.
 * Be sure that the maximal pixel intensity does not violate the intensity threshold of **4096**.
-
+### 2.2 Open Recon reconstruction
+* Download the Open Recon SDK from [this link](https://www.magnetom.net/t/open-recon-sdk-downloads/7223), and follow the instructions to install Open Recon on your scanner. Note that currently, Open Recon is only available on XA50 or higher versions. For more information, please visit the [Open Recon online forum](https://www.magnetom.net/c/openrecon/35).
+* You can also refer to our ISMRM abstract: *Chen et al., Open-source, Flexible, and Reproducible Workflow for Data Acquisition, Reconstruction, and Post-processing Based on Pulseq and Open Recon, ISMRM, Hawaii, 2025* for more information for the integration of Pulseq with Open Recon.
 
 
 
  
+
 
 
 
