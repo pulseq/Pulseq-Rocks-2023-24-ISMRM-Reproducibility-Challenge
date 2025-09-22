@@ -1,5 +1,5 @@
-# Tutorials for conversion of Pulseq-generated data into ISMRMRD data format
-This directory contains materials and tutorials for harmonized data acquisition with Pulseq-based MPRAGE and EPI sequences on Siemens, Generic Electric (GE), Philips, and United Imaging (UIH) platforms.
+# Tutorials for converting Pulseq-generated data into ISMRMRD format
+This directory contains materials and tutorials for data format standardization with Pulseq-based MPRAGE and EPI sequences on Siemens, General Electric (GE), Philips, and the United Imaging (UIH) platforms.
 ## 1. Prerequisites
 ### 1.1 Programming tools
 In this project, the Pulseq-based sequences are designed using the [*Pulseq MATLAB open-source toolbox*](https://github.com/pulseq/pulseq). Therefore, you need to install the MATLAB software on your computer and be familiar with basic MATLAB programming. Alternatively, you can program your Pulseq-based sequences using the [*PyPulseq Python open-source toolbox*](https://github.com/imr-framework/pypulseq) with the Python software installed on your computer. It is also possible to program sequences using Pulseq on Google CoLab without installing programming tools on your computer (see more examples from the [*MR Physics with Pulseq 2024 DACH-ISMRM course*](https://github.com/pulseq/MR-Physics-with-Pulseq)).   
