@@ -1,10 +1,10 @@
 # Tutorials for converting Pulseq-generated data into ISMRMRD format
 This directory contains materials and tutorials for data format standardization with Pulseq-based MPRAGE and EPI sequences on Siemens, General Electric (GE), Philips, and the United Imaging (UIH) platforms.
-## 1. Required software
+## 1. Required toolboxes
 Please add the following three toolboxes and their subfolders to MATLAB's path:
 ### 1.1 [Open-source Pulseq MATLAB toolbox](https://github.com/pulseq/pulseq) to load Pulseq `.seq` files and get LABELs and sequence definitions.
-### 1.2 [mapVBVD](https://github.com/pehses/mapVBVD#) software to load the Siemens `.dat` raw data. 
-### 1.3 [ISMRMRD](https://github.com/ismrmrd/ismrmrd#) software for ISMRMRD conversion.
+### 1.2 [mapVBVD](https://github.com/pehses/mapVBVD#) toolbox to load the Siemens `.dat` raw data. 
+### 1.3 [ISMRMRD](https://github.com/ismrmrd/ismrmrd#) toolbox for ISMRMRD conversion.
 
 ## 2. MPRAGE
 We developed a 3D MPRAGE sequence using Pulseq in Matlab. The MPRAGE sequence diagram is featured with (1) a two-fold GRAPPA acceleration, (2) a noise scan, (3) and a water-only RF excitation for fat suppression. The sequence diagram and the acceleration pattern are shown below:
