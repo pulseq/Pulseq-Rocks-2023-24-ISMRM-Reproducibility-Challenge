@@ -15,3 +15,5 @@ This folder contains materials to convert a Siemens MPRAGE `.dat` raw data acqui
 This folder contains materials to convert a Siemens EPI `.dat` raw data from Cima.X 3T to ISMRMRD data.
 * Be sure that the Pulseq, mapVBVD, and ISMRMRD toolboxes are in MATLAB's path.
 * Run `pulseq2mrd_epi.m` script. It can convert the Siemens EPI data (`meas_MID00207_FID24421_pulseq_epirs_iso_2_8mm_slc48_tran.dat`) to ISMRMRD data (`pulseq_epi_data.h5`) with the LABELs and sequence definitions loaded from the `epi_challenge.seq` file.
+
+The complete package with raw data and generated ISMRMRD data are hosted in ...
