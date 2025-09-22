@@ -25,14 +25,8 @@ This directory contains materials and tutorials for
 <img width="1333" height="276" alt="image" src="https://github.com/user-attachments/assets/b6286d76-a03f-47b8-ad45-a40706fca4dc" />
 
 ### 1.4 Load Gadgetron-reconstructed images
-* Run `load_Gadgetron_recon_mprage.m` script to load Gadgetron-reconstructed MPRAGE images (`pulseq_mprage_out.h5`) and save as nifti images (`pulseq_mprage_gt.nii`). One MPRAGE image is shown below:
-
-<img width="838" height="1045" alt="mprage" src="https://github.com/user-attachments/assets/602a9c50-c07d-4722-846f-26a9bbdcbec1" />
-
-
-* Run `load_Gadgetron_recon_epi.m` script to load Gadgetron-reconstructed EPI images (`pulseq_epi_out.h5`) and save as nifti images (`pulseq_epi_gt.nii`). One EPI image is shown below:
-
-<img width="1046" height="1045" alt="epi" src="https://github.com/user-attachments/assets/d2d97464-0964-4cbb-8b79-c0cc6eb146c4" />
+* Run `load_mprage_gt_recon.m` script to load Gadgetron-reconstructed MPRAGE images (`pulseq_mprage_out.h5`) and save as nifti images (`pulseq_mprage_gt.nii`).
+* Run `load_epi_gt_recon.m` script to load Gadgetron-reconstructed EPI images (`pulseq_epi_out.h5`) and save as nifti images (`pulseq_epi_gt.nii`).
 
 ## 2. Instructions for vendor-based online reconstruction on Siemens
 ### 2.1 ICE reconstruction
@@ -47,9 +41,19 @@ Before executing the Pulseq-based sequences on a Siemens platform, you can enabl
 * Download the Open Recon SDK from [this link](https://www.magnetom.net/t/open-recon-sdk-downloads/7223), and follow the instructions to install Open Recon on your scanner. Note that currently, Open Recon is only available on XA50 or higher versions. For more information, please visit the [Open Recon online forum](https://www.magnetom.net/c/openrecon/35).
 * You can also refer to our ISMRM abstract: *Chen et al., Open-source, Flexible, and Reproducible Workflow for Data Acquisition, Reconstruction, and Post-processing Based on Pulseq and Open Recon, ISMRM, Hawaii, 2025* for more information for the integration of Pulseq with Open Recon.
 
+## 3. Reconstructed images
+* The MPRAGE images reconstructed using Gadgetron, ICE, and Open Recon are shown below:
+
+<img width="677" height="254" alt="mprage" src="https://github.com/user-attachments/assets/36839e0a-6109-4535-9805-3a40e1046df0" />
+
+* The EPI images reconstructed using Gadgetron, ICE, and Open Recon are shown below:
+
+<img width="666" height="202" alt="epi" src="https://github.com/user-attachments/assets/9e1cdfda-f27a-44f0-817b-24ec08f405e2" />
+
 
 
  
+
 
 
 
