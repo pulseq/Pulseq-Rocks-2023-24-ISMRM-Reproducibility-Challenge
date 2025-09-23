@@ -33,7 +33,7 @@ This directory contains materials and tutorials for
 Before executing the Pulseq-based sequences on a Siemens platform, you can enable ICE online Reconstruction following the instructions below:
 * Navigate to the Special Card, set Data handling to ICE STD for NUMARIS/X (e.g. XA60A and XA61A), and ICE 3D/2D for MPRAGE/EPI for NUMARIS/4 (e.g. VB, VD, and VE), as below:
 
-<img width="945" height="407" alt="image" src="https://github.com/user-attachments/assets/a6b0a2b8-63e7-480c-acdc-3b63c5972799" />
+<img width="472.5" height="203.5" alt="image" src="https://github.com/user-attachments/assets/a6b0a2b8-63e7-480c-acdc-3b63c5972799" />
 
 * Select `Sum-of-Square` for coil combination.
 * Be sure that the maximal pixel intensity does not violate the intensity threshold of **4096**.
@@ -59,6 +59,7 @@ For more information, please refer to our ISMRM abstract: *Chen et al., Open-sou
 
 
  
+
 
 
 
