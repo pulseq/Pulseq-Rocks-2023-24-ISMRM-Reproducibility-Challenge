@@ -1,4 +1,4 @@
-# Tutorials for Harmonized Image Reconstruction Using Gadgetron
+# Image Reconstruction Tutorial
 This directory contains materials and tutorials for 
 * image reconstruction using Gadgetron for Pulseq-generated ISMRMRD data from Siemens, General Electric (GE), Philips, and the United Imaging (UIH) platforms, and
 * vendor-based online image reconstruction for Pulseq-based MPRAGE and EPI sequences on the Siemens platform.
@@ -59,6 +59,7 @@ For more information, please refer to our ISMRM abstract: *Chen et al., Open-sou
 
 
  
+
 
 
 
