@@ -52,7 +52,7 @@ Before executing the Pulseq-based sequences on a Siemens platform, you can enabl
 * Select `Sum-of-Square` for coil combination.
 * Be sure that the maximal pixel intensity does not violate the intensity threshold of **4096**.
 ### 3.2 Open Recon reconstruction
-* Download the Open Recon SDK from [this link](https://www.magnetom.net/t/open-recon-sdk-downloads/7223).
+* Download the Open Recon SDK from the [Siemens MAGNETOM Community website](https://www.magnetom.net/t/open-recon-sdk-downloads/7223).
 * Follow the `python-modules\OpenReconGettingStartedPython.pdf` document inside the SDK package to build your Open Recon container.
 * You may want to configure your own Open Recon container to specify how Open Recon interfaces with the product reconstruction and the end user interface presented on the scanner. In this case, please refer to the document `OpenReconJsonConfig.pdf` located within the SDK package for instructions on configuring the Open Recon container using a JSON-formatted descriptor.
 * Follow the `README.pdf` inside the SDK package to install Open Recon on your scanner. Note that Open Recon is now only partially/completely available on XA50 or higher versions. For more information, please visit the [Open Recon online forum](https://www.magnetom.net/c/openrecon/35).
@@ -77,6 +77,7 @@ This tutorial provides example Pulseq-based images reconstructed by Gadgetron, I
 
 
  
+
 
 
 
