@@ -39,20 +39,27 @@ Before executing the Pulseq-based sequences on a Siemens platform, you can enabl
 * Be sure that the maximal pixel intensity does not violate the intensity threshold of **4096**.
 ### 2.2 Open Recon reconstruction
 * Download the Open Recon SDK from [this link](https://www.magnetom.net/t/open-recon-sdk-downloads/7223), and follow the instructions to install Open Recon on your scanner. Note that currently, Open Recon is only available on XA50 or higher versions. For more information, please visit the [Open Recon online forum](https://www.magnetom.net/c/openrecon/35).
-* You can also refer to our ISMRM abstract: *Chen et al., Open-source, Flexible, and Reproducible Workflow for Data Acquisition, Reconstruction, and Post-processing Based on Pulseq and Open Recon, ISMRM, Hawaii, 2025* for more information for the integration of Pulseq with Open Recon.
+* The open-source, flexible, and reproducible workflow for data acquisition, reconstruction, and post-processing based on Pulseq and Open Recon is shown below:
+
+<img width="329.375" height="610" alt="workflow" src="https://github.com/user-attachments/assets/4ce158d2-8d91-470b-b1fc-3bcf91f45459" />
+
+Workflow overview. **(A)** TSE sequence designed in Pulseq. **(B)** The Pulseq interpreter loads the .seq file and streams events to scanners. **(C)** Data acquisition occurs on various scanners. **(D)** Acquired data are streamed into the ICE pipeline and emitted to the OR container for custom reconstruction or post-processing using the ISMRMRD6 format. The processed data are injected into the pipeline and **(E)** converted to DICOM images and then sent to the host computer for online display. If OR is not available, raw data can be exported for offline reconstruction in the same OR container.
+
+For more information, please refer to our ISMRM abstract: *Chen et al., Open-source, Flexible, and Reproducible Workflow for Data Acquisition, Reconstruction, and Post-processing Based on Pulseq and Open Recon, ISMRM, Hawaii, 2025*.
 
 ## 3. Example reconstructed images
-* The MPRAGE images from Siemens Cima.X 3T:
+* The MPRAGE phantom images from Siemens Cima.X 3T:
 
 <img width="677" height="254" alt="mprage" src="https://github.com/user-attachments/assets/36839e0a-6109-4535-9805-3a40e1046df0" />
 
-* The EPI images from Siemens Cima.X 3T:
+* The EPI phantom images from Siemens Cima.X 3T:
 
 <img width="666" height="202" alt="epi" src="https://github.com/user-attachments/assets/9e1cdfda-f27a-44f0-817b-24ec08f405e2" />
 
 
 
  
+
 
 
 
