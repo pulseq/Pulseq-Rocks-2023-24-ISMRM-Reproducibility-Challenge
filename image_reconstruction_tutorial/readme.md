@@ -13,7 +13,10 @@ The documents contained in this tutorial are listed below:
 ## 2. Instructions for Gadgetron offline reconstruction
 ### 2.1 Gadgetron installation (on a Windows 11 system)
 * Download and install the [Docker](https://www.docker.com/) software in your computer. You may need to install/update the Windows Sub Linux (WSL) system for the Docker installation.
-* Open your terminal (PowerShell with an administrative account in Windows) and navigate to the folder you would like to map to the Gadgetron Docker container.
+* Open your terminal (PowerShell with an administrative account in Windows) and navigate to the folder you would like to map to the Gadgetron Docker container, e.g. by running this command `cd C:\Users\chenq\Downloads\Docker_folder`, as below:
+
+<img width="1154" height="176" alt="image" src="https://github.com/user-attachments/assets/aad83ff4-b6ec-4b47-852a-ef14d0feac0b" />
+
 * Run `docker run -t --name gt_latest --detach --volume ${pwd}:/opt/data ghcr.io/gadgetron/gadgetron/gadgetron_ubuntu_rt_nocuda:latest`. If Docker is not recognized, set Docker to connect to `C:\Program Files\Docker\Docker\resources\bin` in the Environment Path in Windows. This will download and then launch the [latest Gadgetron version](https://gadgetron.readthedocs.io/en/latest/building.html) in a Docker container. It will also mount your current folder as a data folder inside the container. The installed Gadgetron software within the Docker container is as follows:
 <img width="1906" height="414" alt="image" src="https://github.com/user-attachments/assets/2c8db889-7739-45ae-b97a-71100d6bd158" />     
 
@@ -68,6 +71,7 @@ For more information, please refer to our ISMRM abstract: *Chen et al., Open-sou
 
 
  
+
 
 
 
