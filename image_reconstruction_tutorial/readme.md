@@ -46,11 +46,18 @@ Vendor-provided online reconstructions, ICE and OpenRecon, are enabled for Pulse
 ### 3.1 ICE reconstruction
 Before executing the Pulseq-based sequences on a Siemens platform, you can enable ICE online Reconstruction following the instructions below:
 * Navigate to the Special Card, set Data handling to `ICE STD` for NUMARIS/X (e.g. XA60A and XA61A), or `ICE 3D`/`ICE 2D` for MPRAGE/EPI for NUMARIS/4 (e.g. VB, VD, and VE), as below:
-
-<img width="472.5" height="203.5" alt="image" src="https://github.com/user-attachments/assets/a6b0a2b8-63e7-480c-acdc-3b63c5972799" />
-
 * Select `Sum-of-Square` for coil combination.
 * Be sure that the maximal pixel intensity does not violate the intensity threshold of **4096**.
+* To enable online reconstruction for Pulseq-based MPRAGE (`mprage_challenge.seq`), please turn on the iPAT card and select “ICE STD” for Numeris.X (ICE 3D for Numeris 4) for “Data handling” in the special card, as below:
+
+<img width="1897" height="523" alt="1" src="https://github.com/user-attachments/assets/b7557b67-6392-45da-984e-c042d656d93d" />
+
+
+* To enable online reconstruction for Pulseq-based EPI (epi_siemens.seq), please be sure that the iPAT card is off and “Dynamic” -> “Measurements” is 30, and select “ICE STD” for Numeris.X (ICE 2D for Numeris 4) for “Data handling” in the special card, as below:
+
+<img width="666.5" height="535.5" alt="2" src="https://github.com/user-attachments/assets/19eabde6-8c68-48b2-be8b-1e0e1c71f7ed" />
+
+
 ### 3.2 Open Recon reconstruction
 * Download the Open Recon SDK from the [Siemens MAGNETOM Community website](https://www.magnetom.net/t/open-recon-sdk-downloads/7223).
 * Follow the `python-modules\OpenReconGettingStartedPython.pdf` document inside the SDK package to build your Open Recon container.
@@ -77,6 +84,7 @@ This tutorial provides example Pulseq-based images reconstructed by Gadgetron, I
 
 
  
+
 
 
 
