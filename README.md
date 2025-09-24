@@ -22,11 +22,25 @@ It contains four directories:
 * `image_reconstruction_tutorial`: tutorial for image reconstruction using Gadgetron on all platforms and vendor-based online reconstruction on the Siemens platform.
 * `required_software`: host all required software for this workflow.
 
-### Motivation
-There is currently a worldwide effort to discover potential research and promote clinical use of magnetic resonance imaging (MRI). However, a significant practical barrier is the effort required to harmonize sequences and reconstruction algorithms on vendor-specific development platforms to ensure that data are acquired and reconstructed in a consistent and reproducible manner across different platforms. In order to directly compare results between platforms or to pool data from multiple platforms for increasing statistical power, open-source science and software tools are desirable for efficiently harmonizing data acquisition and image reconstruction in multi-site MRI studies.
-### Data Acquisition and Image Reconstruction Workflow
-In the abstract, to alleviate the above-mentioned challenge, we develop an open-source, cross-platform, easy-to-learn workflow based on the Pulseq framework to enable efficient, transparent, reproducible data acquisition (Figure 1). We extend Pulseq to integrate with Siemens’ “Image Calculation Environment” (ICE) platform and Gadgetron to establish a complete data acquisition and reconstruction workflow. ICE is integrated into the Siemens magnetic resonance system, while Gadgetron can be used to reconstruct data from various vendors by employing vendor-independent ISMRMRD data format. Two example sequences, Magnetization Prepared RApid Gradient Echo (MPRAGE) and Echo-Planar Imaging (EPI), were developed based on the extended Pulseq and executed on three Siemens scanners to validate the workflow.
-![workflow](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/71345df4-6293-4298-8950-404a543cc111)
+## Motivation
+Reproducibility in MRI is limited by variability in data acquisition, formatting, and reconstruction across sites and vendors. To mitigate the reproducibility challenges in MRI, we established a cross-vendor, open-source workflow for transparent and reproducible MRI acquisition and reconstruction. This workflow was evaluated with MPRAGE and EPI protocols on a phantom and a healthy human brain on eight scanners, encompassing five sites and four vendors. Vendor-native data acquisition and reconstruction protocols were also performed for comparison.
+### Participating sites
+* Freiburg, Germany
+* Boston, USA
+* Michigan, USA
+* Utrecht, the Netherlands
+* Shanghai, China
+### Participating vendors
+* Siemens
+* General Electric (GE)
+* Philips
+* the United Imaging (UIH)
+
+## Open-source, cross-vendor, reproducible workflow for MRI data acquisition and reconstruction using advanced Pulseq
+We established a cross-vendor, open-source workflow for transparent and reproducible MRI acquisition and reconstruction. The extended Pulseq framework with advanced features (e.g., LABEL) was used to harmonize data acquisition. Pulseq-generated raw k-space data were standardized into the ISMRMRD format using LABELs and sequence definitions embedded in the Pulseq files. Gadgetron provided open-source, vendor-independent image reconstruction and post-processing. Additionally, vendor-based online reconstructions (ICE and OpenRecon) were enabled for Pulseq-based sequences on Siemens platforms.
+
+
+
 **Figure 1** Overview of the whole workflow. **(A)** MPRAGE sequence diagram and its GRAPPA pattern designed in the Pulseq Matlab software. **(B)** The Pulseq interpreter loads the .seq file and streams events to scanners. **(C)** Three different Siemens scanners for data acquisition. **(D)** The acquired data are streamed into ICE/Gadgetron for online reconstruction. If Gadgetron is not installed on the scanner, raw data can be exported to perform offline reconstruction. **(E)** ICE/Gadgetron sends the DICOM images to the MRI host computer within seconds/minutes after measurement.
 ## Acknowledgment
 This work is supported by research grants NIH R01 EB032378 and NIH U24 NS120056. 
