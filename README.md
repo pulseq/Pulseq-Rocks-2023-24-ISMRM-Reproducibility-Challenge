@@ -44,7 +44,10 @@ We established a cross-vendor, open-source workflow for transparent and reproduc
 Overview of the complete workflow. **(A)** EPI sequence designed using the Pulseq MATLAB toolbox. **(B)** The Pulseq interpreter loads the .seq file and streams sequence events in real time. **(C)** These events are executed on scanners from multiple sites and vendors. **(D)** Acquired raw k-space data are either converted offline to ISMRMRD format and reconstructed using Gadgetron, or streamed directly into ICE or OpenRecon for online reconstruction on Siemens platforms. **(E)** Final images are generated across sites or vendors using harmonized Gadgetron pipelines. Alternatively, ICE or OpenRecon sends DICOM images directly to the Siemens scanner console.
 
 ## Acknowledgment
+
 This work was supported by research grants NIH R01 EB032378, NIH U24 NS120056, EU MRITwins 101078393, EURAMET 22HLT02 A4IM, and DFG INST 39 1365-1. 
+
+
 ## References
 * Layton KJ, Kroboth S, Jia F, et al. Pulseq: a rapid and hardware-independent pulse sequence prototyping framework. Magn Reson Med. 2017;77(4):1544-1552. doi:10.1002/mrm.26235
 * Nielsen JF, Noll DC. TOPPE: a framework for rapid prototyping of MR pulse sequences. Magn Reson Med. 2018;79(6):3128-3134. doi:10.1002/mrm.26990
