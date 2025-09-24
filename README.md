@@ -37,19 +37,22 @@ Reproducibility in MRI is limited by variability in data acquisition, formatting
 * the United Imaging (UIH)
 
 ## Open-source, cross-vendor, reproducible workflow for MRI data acquisition and reconstruction using advanced Pulseq
-We established a cross-vendor, open-source workflow for transparent and reproducible MRI acquisition and reconstruction. The extended Pulseq framework with advanced features (e.g., LABEL) was used to harmonize data acquisition. Pulseq-generated raw k-space data were standardized into the ISMRMRD format using LABELs and sequence definitions embedded in the Pulseq files. Gadgetron provided open-source, vendor-independent image reconstruction and post-processing. Additionally, vendor-based online reconstructions (ICE and OpenRecon) were enabled for Pulseq-based sequences on Siemens platforms.
+We established a cross-vendor, open-source workflow for transparent and reproducible MRI acquisition and reconstruction. The extended Pulseq framework with advanced features (e.g., LABEL) was used to harmonize data acquisition. Pulseq-generated raw k-space data were standardized into the ISMRMRD format using LABELs and sequence definitions embedded in the Pulseq files. Gadgetron provided open-source, vendor-independent image reconstruction and post-processing. Additionally, vendor-based online reconstructions (ICE and OpenRecon) were enabled for Pulseq-based sequences on Siemens platforms. The whole workflow is shown below:
 
+<img width="437.8333" height="676" alt="workflow" src="https://github.com/user-attachments/assets/06cc3497-7523-4c1c-abc5-289b2dd43a2e" />
 
+Overview of the complete workflow. **(A)** EPI sequence designed using the Pulseq MATLAB toolbox. **(B)** The Pulseq interpreter loads the .seq file and streams sequence events in real time. **(C)** These events are executed on scanners from multiple sites and vendors. **(D)** Acquired raw k-space data are either converted offline to ISMRMRD format and reconstructed using Gadgetron, or streamed directly into ICE or OpenRecon for online reconstruction on Siemens platforms. **(E)** Final images are generated across sites or vendors using harmonized Gadgetron pipelines. Alternatively, ICE or OpenRecon sends DICOM images directly to the Siemens scanner console.
 
-**Figure 1** Overview of the whole workflow. **(A)** MPRAGE sequence diagram and its GRAPPA pattern designed in the Pulseq Matlab software. **(B)** The Pulseq interpreter loads the .seq file and streams events to scanners. **(C)** Three different Siemens scanners for data acquisition. **(D)** The acquired data are streamed into ICE/Gadgetron for online reconstruction. If Gadgetron is not installed on the scanner, raw data can be exported to perform offline reconstruction. **(E)** ICE/Gadgetron sends the DICOM images to the MRI host computer within seconds/minutes after measurement.
 ## Acknowledgment
-This work is supported by research grants NIH R01 EB032378 and NIH U24 NS120056. 
+This work was supported by research grants NIH R01 EB032378, NIH U24 NS120056, EU MRITwins 101078393, EURAMET 22HLT02 A4IM, and DFG INST 39 1365-1. 
 ## References
-* Van Horn JD, Toga AW. Multisite neuroimaging trials. Curr Opin Neurol. 2009;22(4):370-378.
-* Layton KJ, Kroboth S, Jia F, et al. Pulseq: A rapid and hardware-independent pulse sequence prototyping framework. Magn Reson Med. 2017;77(4):1544-1552.
-* Hansen MS, Sørensen TS. Gadgetron: An open source framework for medical image reconstruction. Magn Reson Med. 2013;69(6):1768-1776.
-* Xue H, Inati S, Sørensen TS, Kellman P, Hansen MS. Distributed MRI reconstruction using Gadgetron-based cloud computing. Magn Reson Med. 2015;73(3):1015-1025.
-* Inati SJ, Naegele JD, Zwart NR, et al. ISMRM Raw data format: A proposed standard for MRI raw datasets. Magn Reson Med. 2017;77(1):411-421. doi:10.1002/mrm.26089
-* Mugler JP. Rapid Three-dimential T1-weighted MR Imaging with the MP-RAGE sequence. J Magn Reson Imaging. 1991;1(561-567).
-* Stehling MK, Turner R, Mansfield P. Echo-planar imaging: Magnetic resonance imaging in a fraction of a second. Science (80- ). 1991;254(5028):43-50.
-* Griswold MA, Jakob PM, Heidemann RM, et al. Generalized Autocalibrating Partially Parallel Acquisitions (GRAPPA). Magn Reson Med. 2002;47(6):1202-1210.
+* Layton KJ, Kroboth S, Jia F, et al. Pulseq: a rapid and hardware-independent pulse sequence prototyping framework. Magn Reson Med. 2017;77(4):1544-1552. doi:10.1002/mrm.26235
+* Nielsen JF, Noll DC. TOPPE: a framework for rapid prototyping of MR pulse sequences. Magn Reson Med. 2018;79(6):3128-3134. doi:10.1002/mrm.26990
+* Roos THM, Versteeg E, Gosselink M, et al. pTx-Pulseq in hybrid sequences: accessible and advanced hybrid open-source MRI sequences on Philips scanners. Magn Reson Med. 2025;94(5):1946-1962. doi:10.1002/mrm.30601
+* United Imaging. United Imaging MR ADEPT Platform | Pulseq on UIH MR. https://adept-forge.github.io/. Accessed September 17, 2025.
+* Hansen MS, Sørensen TS. Gadgetron: an open source framework for medical image reconstruction. Magn Reson Med. 2013;69:1768-1776. doi:10.1002/mrm.24389
+* Xue H, Inati S, Sørensen TS, Kellman P, Hansen MS. Distributed MRI reconstruction using Gadgetron-based cloud computing. Magn Reson Med. 2015;73(3):1015-1025. doi:10.1002/mrm.25213
+* Inati SJ, Naegele JD, Zwart NR, et al. ISMRM raw data format: A proposed standard for MRI raw datasets. Magn Reson Med. 2017;77(1):411-421. doi:10.1002/mrm.26089
+* Chen Q, Wehkamp N, Wan C, et al. Automated, open-source, vendor-independent quality assurance protocol based on the Pulseq framework. Magn Reson Mater Physics, Biol Med. 2025;38(3):533-546. doi:10.1007/s10334-025-01247-1
+* Chen Q, Hucker P, Shafiekhani M, Zaitsev M. Open-source, flexible, and reproducible workflow for data acquisition, reconstruction, and post-processing based on Pulseq and Open Recon. In: Proceedings of the 33rd Annual Meeting of ISMRM, Honolulu, HI, 10-15 May, 2025. ; 2025.
+* Chen Q, Zijlstra F, Hucker P, Littin S, Zaitsev M. Open-source, cross-platform workflow for MRI data acquisition and image reconstruction based on the Pulseq framework. In: Proceedings of the 32nd Annual Meeting of ISMRM, Singapore, 04-09 May, 2024. ; 2024.
