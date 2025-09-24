@@ -1,8 +1,8 @@
 # Introduction
 This repository was originally built for hosting materials, tutorials, and reports of the ***Pulseq Rocks*** team for the [2023-24 ISMRM Reproducibility Challenge](https://challenge.ismrm.org/2023-24-reproducibility-challenge/) event. The report of the Reproducibility Challenge is now in the subfolder [reproducibility_tema_challenge_report](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/blob/main/reproducibility_team_challenge_report/PulseqRocks_Chen_v2.pdf).
 ![reproducibility_qr_graphic_sticker](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/adef1b4e-0391-4506-ab49-15db699dae20)
-# Good News
-### Our *Pulseq Rocks* team won first place in this highly competitive Challenge because PULSEQ ROCKS!!!
+## Good News
+Our *Pulseq Rocks* team won first place in this highly competitive Challenge because PULSEQ ROCKS!!!
 ## Reproducibility Challenge Team
 ### Team name
 * *Pulseq Rocks*
@@ -14,7 +14,7 @@ This repository was originally built for hosting materials, tutorials, and repor
 ## Reproducibility Tasks
 Our task is to replicate the abstract titled *"Open-Source, Cross-Platform Workflow for MRI Data Acquisition and Image Reconstruction Based on the Pulseq Framework"* (program number: 0948, ISMRM 2024) on Siemens and General Electric (GE) magnetic resonance scanners in different research centers. This abstract was awarded the **ISMRM Magna cum Laude Merit Award**.
 
-## Update on 24.09.2025      
+# Update on 24.09.2025      
 The repository is now updated to contain materials and tutorials of our work titled *An open-source, reproducible workflow for MRI data acquisition and reconstruction using advanced Pulseq: multi-site and cross-vendor validation*. This workflow was successfully validated on eight scanners, encompassing two magnetic fields, five sites, and four vendors.
 It contains four directories:
 * `data_acquisition_tutorial`: tutorial for data acquisition with MPRAGE and EPI sequences on Siemens, General Electric (GE), Philips, and the United Imaging (UIH) platforms.
