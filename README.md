@@ -71,4 +71,3 @@ This work was supported by research grants NIH R01 EB032378, NIH U24 NS120056, E
 * Chen Q, Wehkamp N, Wan C, et al. Automated, open-source, vendor-independent quality assurance protocol based on the Pulseq framework. Magn Reson Mater Physics, Biol Med. 2025;38(3):533-546. doi:10.1007/s10334-025-01247-1
 * Chen Q, Hucker P, Shafiekhani M, Zaitsev M. Open-source, flexible, and reproducible workflow for data acquisition, reconstruction, and post-processing based on Pulseq and Open Recon. In: Proceedings of the 33rd Annual Meeting of ISMRM, Honolulu, HI, 10-15 May, 2025. ; 2025.
 * Chen Q, Zijlstra F, Hucker P, Littin S, Zaitsev M. Open-source, cross-platform workflow for MRI data acquisition and image reconstruction based on the Pulseq framework. In: Proceedings of the 32nd Annual Meeting of ISMRM, Singapore, 04-09 May, 2024. ; 2024.
->>>>>>> fad1e771e38b7d351b92b0c30eb0f42788baa8bf
