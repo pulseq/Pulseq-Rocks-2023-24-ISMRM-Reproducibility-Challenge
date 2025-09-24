@@ -1,6 +1,12 @@
-# Introduction
-This repository contains materials, tutorials, and reports of the *Pulseq Rocks* team for the [2023-24 ISMRM Reproducibility Challenge](https://challenge.ismrm.org/2023-24-reproducibility-challenge/) event.
+# Introduction (update on 24.09.2025)
+This repository was originally built for hosting materials, tutorials, and reports of the ***Pulseq Rocks*** team for the [2023-24 ISMRM Reproducibility Challenge](https://challenge.ismrm.org/2023-24-reproducibility-challenge/) event. The report of the Reproducibility Challenge is now in the subfolder [reproducibility_tema_challenge_report](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/blob/main/reproducibility_team_challenge_report/PulseqRocks_Chen_v2.pdf).
 ![reproducibility_qr_graphic_sticker](https://github.com/pulseq/Pulseq-Rocks-2023-24-ISMRM-Reproducibility-Challenge/assets/26165904/adef1b4e-0391-4506-ab49-15db699dae20)
+The repository is now extended to contain materials and tutorials of our work titled *An open-source, reproducible workflow for MRI data acquisition and reconstruction using advanced Pulseq: multi-site and cross-vendor validation*. This workflow was successfully validated on eight scanners, encompassing two magnetic fields, five sites, and four vendors.
+It contains four directories:
+* `data_acquisition_tutorial`: tutorial for data acquisition with MPRAGE and EPI sequences on Siemens, General Electric (GE), Philips, and the United Imaging (UIH) platforms.
+* `ISMRMRD_conversion_tutorial`: tutorial for converting Pulseq-generated data to ISMRMRD format.
+* `image_reconstruction_tutorial`: tutorial for image reconstruction using Gadgetron on all platforms and vendor-based online reconstruction on the Siemens platform.
+* `required_software`: host all required software for this workflow.
 # Good News
 ### Our *Pulseq Rocks* team won first place in this highly competitive Challenge because PULSEQ ROCKS!!!
 ## Reproducibility Challenge Team
