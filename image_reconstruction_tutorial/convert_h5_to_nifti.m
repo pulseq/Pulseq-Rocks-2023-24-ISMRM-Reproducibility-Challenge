@@ -12,7 +12,7 @@ im = flip(im, 1) ;
 figure ;
 montage(rot90(squeeze(mat2gray(im(:,:,150))))) ;
 colormap default ;
-niftiwrite(im, 'pulseq_mprage_gt.nii') ;
+niftiwrite(im, 'pulseq_mprage_gadgetron.nii') ;
 
 %% To convert the Gadgetron-reconstructed .h5 EPI image and convert it to nifti images.
 clear; close all; clc;
@@ -24,4 +24,4 @@ im = reshape(im, [80,80,48,30]) ;
 figure ;
 montage(mat2gray(rot90(im(:,:,33,30)))) ;
 colormap default ;
-niftiwrite(im, 'pulseq_epi_gt.nii') ;
+niftiwrite(im, 'pulseq_epi_gadgetron.nii') ;
