@@ -27,8 +27,48 @@ We developed a 3D MPRAGE sequence using Pulseq in Matlab. The MPRAGE sequence di
 * For users from other vendors (GE, Philips, and UIH), please run the `writeMPRAGE_grappa_WE.m` script with the corresponding vendor option (e.g., `vendor='ge' ;`). For installation of the vendor-specific Pulseq interpreter and the execution of the Pulseq .seq files, please refer to the websites or contact the developers mentioned above in `1.3 Closed-source, vendor-dependent Pulseq interpreter`. For data acquisition, please refer to the instruction `data_acquisition_instruction_GE_Philips_UIH.pdf`.
 * We also run product MPRAGE protocols for comparison. For product sequence configuration on Siemens, please refer to the document `siemens_protocol.pdf`. For product sequence configuration on other vendors, please refer to `data_acquisition_instruction_GE_Philips_UIH.pdf` for the information on the key sequence parameters.
 
+<<<<<<< HEAD
 ## 4. Data acquisition with EPI
 We developed a 2D multi-slice EPI sequence with fat saturation, ramp sampling, and a three-echo navigator using Pulseq. The EPI sequence diagram is shown below.
 <img width="1909" height="791" alt="epi_diagram" src="https://github.com/user-attachments/assets/3227e030-35c6-4d55-8706-a30d76c0eab1" />
 * Please run the `writeEpiRS_label.m` script with the correct vendor option (e.g., `vendor = 'siemens' ;`) to generate the `epi_challenge.seq` Pulseq file for sequence execution. For data acquisition on Siemens platforms, please refer to the instruction `data_acquisition_reconstruction_instruction_siemens.pdf`. For data acquisition on non-Siemens platforms, please refer to the instruction `data_acquisition_instruction_GE_Philips_UIH.pdf`.
 * We also run product EPI protocols for comparing the performance between the vendor-based and Pulseq-based EPI sequences. For product sequence configuration on Siemens, please refer to the document `siemens_protocol.pdf`. For product sequence configuration on other vendors, please refer to `data_acquisition_instruction_GE_Philips_UIH.pdf` for the information on the key sequence parameters. 
+=======
+## Motivation
+Reproducibility in MRI is limited by variability in data acquisition, formatting, and reconstruction across sites and vendors. To mitigate the reproducibility challenges in MRI, we established a cross-vendor, open-source workflow for transparent and reproducible MRI acquisition and reconstruction. This workflow was evaluated with MPRAGE and EPI protocols on a phantom and a healthy human brain on eight scanners, encompassing five sites and four vendors. Vendor-native data acquisition and reconstruction protocols were also performed for comparison.
+### Participating sites
+* Freiburg, Germany
+* Boston, USA
+* Michigan, USA
+* Utrecht, the Netherlands
+* Shanghai, China
+### Participating vendors
+* Siemens
+* General Electric (GE)
+* Philips
+* the United Imaging (UIH)
+
+## Open-source, cross-vendor, reproducible workflow for MRI data acquisition and reconstruction using advanced Pulseq
+We established a cross-vendor, open-source workflow for transparent and reproducible MRI acquisition and reconstruction. The extended Pulseq framework with advanced features (e.g., LABEL) was used to harmonize data acquisition. Pulseq-generated raw k-space data were standardized into the ISMRMRD format using LABELs and sequence definitions embedded in the Pulseq files. Gadgetron provided open-source, vendor-independent image reconstruction and post-processing. Additionally, vendor-based online reconstructions (ICE and OpenRecon) were enabled for Pulseq-based sequences on Siemens platforms. The whole workflow is shown below:
+
+<img width="437.8333" height="676" alt="workflow" src="https://github.com/user-attachments/assets/06cc3497-7523-4c1c-abc5-289b2dd43a2e" />
+
+Overview of the complete workflow. **(A)** EPI sequence designed using the Pulseq MATLAB toolbox. **(B)** The Pulseq interpreter loads the .seq file and streams sequence events in real time. **(C)** These events are executed on scanners from multiple sites and vendors. **(D)** Acquired raw k-space data are either converted offline to ISMRMRD format and reconstructed using Gadgetron, or streamed directly into ICE or OpenRecon for online reconstruction on Siemens platforms. **(E)** Final images are generated across sites or vendors using harmonized Gadgetron pipelines. Alternatively, ICE or OpenRecon sends DICOM images directly to the Siemens scanner console.
+
+## Acknowledgment
+
+This work was supported by research grants NIH R01 EB032378, NIH U24 NS120056, EU MRITwins 101078393, EURAMET 22HLT02 A4IM, and DFG INST 39 1365-1. 
+
+
+## References
+* Layton KJ, Kroboth S, Jia F, et al. Pulseq: a rapid and hardware-independent pulse sequence prototyping framework. Magn Reson Med. 2017;77(4):1544-1552. doi:10.1002/mrm.26235
+* Nielsen JF, Noll DC. TOPPE: a framework for rapid prototyping of MR pulse sequences. Magn Reson Med. 2018;79(6):3128-3134. doi:10.1002/mrm.26990
+* Roos THM, Versteeg E, Gosselink M, et al. pTx-Pulseq in hybrid sequences: accessible and advanced hybrid open-source MRI sequences on Philips scanners. Magn Reson Med. 2025;94(5):1946-1962. doi:10.1002/mrm.30601
+* United Imaging. United Imaging MR ADEPT Platform | Pulseq on UIH MR. https://adept-forge.github.io/. Accessed September 17, 2025.
+* Hansen MS, Sørensen TS. Gadgetron: an open source framework for medical image reconstruction. Magn Reson Med. 2013;69:1768-1776. doi:10.1002/mrm.24389
+* Xue H, Inati S, Sørensen TS, Kellman P, Hansen MS. Distributed MRI reconstruction using Gadgetron-based cloud computing. Magn Reson Med. 2015;73(3):1015-1025. doi:10.1002/mrm.25213
+* Inati SJ, Naegele JD, Zwart NR, et al. ISMRM raw data format: A proposed standard for MRI raw datasets. Magn Reson Med. 2017;77(1):411-421. doi:10.1002/mrm.26089
+* Chen Q, Wehkamp N, Wan C, et al. Automated, open-source, vendor-independent quality assurance protocol based on the Pulseq framework. Magn Reson Mater Physics, Biol Med. 2025;38(3):533-546. doi:10.1007/s10334-025-01247-1
+* Chen Q, Hucker P, Shafiekhani M, Zaitsev M. Open-source, flexible, and reproducible workflow for data acquisition, reconstruction, and post-processing based on Pulseq and Open Recon. In: Proceedings of the 33rd Annual Meeting of ISMRM, Honolulu, HI, 10-15 May, 2025. ; 2025.
+* Chen Q, Zijlstra F, Hucker P, Littin S, Zaitsev M. Open-source, cross-platform workflow for MRI data acquisition and image reconstruction based on the Pulseq framework. In: Proceedings of the 32nd Annual Meeting of ISMRM, Singapore, 04-09 May, 2024. ; 2024.
+>>>>>>> fad1e771e38b7d351b92b0c30eb0f42788baa8bf
