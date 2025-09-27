@@ -1,5 +1,5 @@
 # Pulseq to ISMRMRD Conversion Tutorial
-This directory contains materials and tutorials for data format standardization with Pulseq-based MPRAGE and EPI sequences on Siemens, General Electric (GE), Philips, and the United Imaging (UIH) platforms.
+This directory contains materials and tutorials for ISMRMRD data format standardization with Pulseq-based MPRAGE and EPI sequences on Siemens, General Electric (GE), Philips, and the United Imaging (UIH) platforms.
 ## 1. Documents
 *  `meas_MID00203_FID24417_pulseq_we_mprage_sag_p2_1mm_iso.dat`: MPRAGE raw data acquired from a phantom on the Siemens Cima.X 3T scanner at Freiburg, Germany.
 *  `meas_MID00207_FID24421_pulseq_epirs_iso_2_8mm_slc48_tran.dat`: EPI raw data acquired from a phantom on the Siemens Cima.X 3T scanner at Freiburg, Germany.     
